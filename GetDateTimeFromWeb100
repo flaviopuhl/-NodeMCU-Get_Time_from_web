@@ -3,7 +3,7 @@
 #include <WiFiUdp.h>
 
 const char *ssid     = "CasaDoTheodoro";
-const char *password = "09012011";
+//const char *password = "09012011";
 
 const long utcOffsetInSeconds = -10800;
 
