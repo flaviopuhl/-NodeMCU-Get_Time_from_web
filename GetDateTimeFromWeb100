@@ -7,8 +7,6 @@ const char *password = "09012011";
 
 const long utcOffsetInSeconds = -10800;
 
-char daysOfTheWeek[7][12] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
-
 // Define NTP Client to get time
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "pool.ntp.org", utcOffsetInSeconds);
@@ -27,7 +25,7 @@ void setup(){
 }
 
 void loop() {
-  timeClient.update();
+timeClient.update();
 
 String formattedDate = timeClient.getFormattedDate();
 
